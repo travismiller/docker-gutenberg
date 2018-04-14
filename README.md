@@ -15,6 +15,13 @@ $ make push
 ## Use the image like this
 
 ```console
+$ docker run -it -v "$(pwd)/gutenberg:/gutenberg" -w /gutenberg puckbag/gutenberg:latest build
+Building site...
+-> Creating 0 pages (0 orphan) and 0 sections
+Done in 68ms.
+```
+
+```console
 $ docker run -it puckbag/gutenberg --help
 gutenberg 0.3.3
 Vincent Prouillet <prouillet.vincent@gmail.com>
